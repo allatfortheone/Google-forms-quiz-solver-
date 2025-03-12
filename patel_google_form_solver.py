@@ -24,7 +24,7 @@ def solve_google_form(form_url):
     }
 
     # Initialize the WebDriver
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome()  # No need to specify the path if chromedriver is in the project directory
 
     # Open the Google Form
     driver.get(form_url)
