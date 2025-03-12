@@ -10,5 +10,6 @@ answers Google forms that are multiple choice and prints out answers
 ```sh
 pip3 install pyfiglet
 pip3 install selenium
+pip3 install webdriver-manager
 
 'pip install -r requirements.txt'
