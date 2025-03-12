@@ -1,7 +1,9 @@
 import pyfiglet
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Function to print the PATEL banner
 def print_banner():
@@ -23,8 +25,9 @@ def solve_google_form(form_url):
         # Add more questions and answers as needed
     }
 
-    # Initialize the WebDriver with the path to ChromeDriver
-    driver = webdriver.Chrome(executable_path='/home/runner/workspace/chromedriver')
+    # Initialize the WebDriver using the ChromeDriverManager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service)
 
     # Open the Google Form
     driver.get(form_url)
