@@ -1,0 +1,3 @@
+# .replit
+language = "python3"
+run = "python3 patel_google_form_solver.py"
