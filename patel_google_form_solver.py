@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def get_google_form_data(form_url):
     # Initialize Chrome options
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--headless")  # Commented out for testing
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
